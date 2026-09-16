@@ -17,8 +17,24 @@ public class Conta {
    this.saldo = 0.00;
   }
    
+   public String getUsuario(){
+       return this.usuario;
+   }
+      
    
+   public double getSaldo(){
+       return this.saldo;
+      }
+      
    
+   public void setUsuario(String usuario){
+     this.usuario = usuario ;
+   }  
+      
+      
+      
+      
+      
    public void depositar (double valor){
         if (valor > 0)   
        this.saldo = this.saldo + valor;
@@ -38,19 +54,10 @@ public class Conta {
    
    }       
    
-   
-   
-   
    public void extrato (){
-       System.out.println("o usuario : " + this.usuario);
        System.out.println("Saldo: " + this.saldo);
    }       
           
-          
-          
-          
-          
-          
-          
+
           
 }
