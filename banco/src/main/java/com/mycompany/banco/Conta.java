@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.banco;
-
 /**
  *
  * @author roy63042026
@@ -12,9 +11,9 @@ public class Conta {
    private String usuario;
    private double saldo;       
   
-   public Conta (String usuario){
+   public Conta (String usuario, double saldo){
    this.usuario = usuario;
-   this.saldo = 0.00;
+   this.saldo = saldo;
   }
    
    public String getUsuario(){
@@ -29,7 +28,7 @@ public class Conta {
    
    public void setUsuario(String usuario){
      this.usuario = usuario ;
-   }  
+   }    
       
       
       
@@ -55,9 +54,23 @@ public class Conta {
    }       
    
    public void extrato (){
-       System.out.println("Saldo: " + this.saldo);
+       System.out.println("Saldo: " + this.getSaldo());
+       System.out.println("Usuario: " + this.getUsuario());
    }       
-          
+      
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 
           
 }

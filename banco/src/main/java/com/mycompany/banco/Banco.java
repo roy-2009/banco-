@@ -12,26 +12,12 @@ public class Banco {
 
     public static void main(String[] args) {
        
-        
-     Conta Contabrb = new Conta ("roy");
+  PessoaFisica antonio = new PessoaFisica("12345634554","Antonio",23.45);     
+  PessoaJuridica lojinha = new PessoaJuridica("2345678","bijuterias da ju",23456.70);  
+  
+  
+  antonio.extrato();
+  lojinha.extrato();
      
-     Contabrb.sacar (10);
-     
-     Contabrb.depositar (100);
-     
-     Contabrb.sacar (10);
-     
-     Contabrb.extrato ();
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }
 }
